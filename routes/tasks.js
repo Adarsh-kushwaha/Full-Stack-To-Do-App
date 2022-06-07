@@ -6,7 +6,7 @@ const router = express.Router();
 
 //routes
 router.route("/").get(getAllTasks).post(createTask);
-router.route("/:id").delete(deleteTask).patch(updateTask).get(getTask);
+router.route("/:id").delete(deleteTask).patch(updateTask).get(getTask); // patch is for partial update and put will replace the item 
 
 
 module.exports = router;
